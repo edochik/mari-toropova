@@ -1,0 +1,122 @@
+.contacts {
+    display: flex;
+    @media (max-width: 899px) {
+        background-color: rgba(220, 220, 220, 0.5);
+    }
+    @media (max-width: 767px) {
+        padding: 20px 15px;
+    }
+}
+
+.contacts__img {
+    width: 50%;
+    img {
+        width: 100%;
+        object-fit: cover;
+        height: 100vh;
+    }
+    @media (max-width: 767px) {
+        display: none;
+    }
+}
+
+.contacts__info {
+    width: 50%;
+    text-align: center;
+    padding-right: calc((100% - 1110px) / 2 + 15px);
+    margin: auto 0;
+    @media (max-width: 767px) {
+        width: 100%;
+    }
+}
+
+.contacts__info-contact {
+    margin-bottom: 40px;
+    > * + * {
+        margin-top: 30px;
+        @media (max-width: 1139px) {
+            margin-top: 20px;
+        }
+        @media (max-width: 767px) {
+            margin-top: 5px;
+        }
+    }
+    @media (max-width: 767px) {
+        margin-bottom: 20px;
+    }
+}
+
+.contacts__text-tel,
+.contacts__tel {
+    font-size: 48px;
+    @media (max-width: 1139px) {
+        font-size: 38px;
+    }
+    @media (max-width: 400px) {
+        font-size: 30px;
+    }
+}
+.contacts__tel {
+    transition: transform 0.3s ease-in;
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.contacts__name {
+    font-size: 60px;
+    @media (max-width: 1139px) {
+        font-size: 40px;
+    }
+    @media (max-width: 400px) {
+        font-size: 35px;
+    }
+}
+
+.contacts__social {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    .social {
+        .icon-whatsapp {
+            width: 80px;
+            height: 80px;
+            @media (max-width: 1139px) {
+                width: 65px;
+                height: 65px;
+            }
+        }
+    }
+}
+.contacts__social-wrapper {
+    .social {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        > * + * {
+            margin-left: 30px;
+        }
+        svg {
+            width: 40px;
+            height: 40px;
+            @media (max-width: 767px) {
+                width: 60px;
+                height: 60px;
+            }
+        }
+        @media (max-width: 767px) {
+            margin-top: 10px;
+        }
+    }
+}
+.contacts__social-title {
+    font-size: 40px;
+    @media (max-width: 1139px) {
+        font-size: 35px;
+    }
+    @media (max-width: 767px) {
+        font-size: 30px;
+    }
+}

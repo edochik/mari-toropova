@@ -5,8 +5,24 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Mari-Toropova</title>
+	<title>МАНИКЮР</title>
+	<meta name="description" content="Маникюр и педикюр">
+	<meta name="keywords" content="Маникюр, педикюр, наращивание, подолог, укрепление ногтей, дизайн ногтей ">
+
 	<link rel="stylesheet" href="./css/main.css">
+	<link rel="stylesheet" href="./libs/owlCarousel2/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="./libs/owlCarousel2/assets/owl.theme.custom.css">
+
+	<link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./img/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./img/favicons/favicon-16x16.png">
+	<link rel="manifest" href="./img/favicons/site.webmanifest">
+	<link rel="mask-icon" href="./img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+	<link rel="shortcut icon" href="./img/favicons/favicon.ico">
+
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="msapplication-config" content="./img/favicons/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
 </head>
 
 <body>
@@ -15,32 +31,60 @@
 			<div class="header__wrapper">
 				<div class="header__logo">
 					<a class="logo" href="#!">
-						<img src="./img/logo/mari-toropova.svg" alt="logo">
+						<picture>
+							<source srcset="./img/logo/mari-toropova-white.svg" media="(max-width: 767px)">
+							<img src="./img/logo/mari-toropova.svg" alt="logo">
+						</picture>
 					</a>
 				</div>
 				<div class="header__title">
-					<h1 class="title">МАНИКЮР <br>для <br>настоящих кобр</h1>
+					<h1 class="title">МАНИКЮР</h1>
+					<p class="header__title-decor">для настоящих кобр</p>
 				</div>
-				<div class="nav">
+				<nav class="nav">
 					<ul class="nav__list">
 						<li class="nav__item">
-							<a class="nav__link nav__link1" href="#!">прайс</a>
+							<a class="nav__link nav__link--decor" href="#price">прайс</a>
 						</li>
 						<li class="nav__item">
-							<a class="nav__link nav__link1" href="#!">запись</a>
+							<a class="nav__link nav__link--decor" href="#contacts">запись</a>
 						</li>
 						<li class="nav__item">
-							<a class="nav__link nav__link1" href="#!">работы</a>
+							<a class="nav__link nav__link--decor nav__link--white" href="#slider">работы</a>
 						</li>
 						<li class="nav__item">
-							<a class="nav__link nav__link1" href="#!">соцсети</a>
+							<a class="nav__link nav__link--decor nav__link--white" href="#footer">контакты</a>
 						</li>
 					</ul>
-				</div>
+				</nav>
 			</div>
 		</div>
 		<div class="header__background">
-			<img class="header__background-img" src="./img/header/header-bg.jpg" alt="header-bg">
+			<picture>
+				<source srcset="./img/header/header-bg-mobile.jpg" media="(max-width: 767px)">
+				<img class="header__background-img" src="./img/header/header-bg.jpg" alt="header-bg">
+			</picture>
+		</div>
+		<div class="mobile-nav">
+			<div class="burger-menu">
+			</div>
+			<nav class="nav" id="nav">
+				<ul class="nav__list">
+					<li class="nav__item">
+						<a class="nav__link nav__link--decor" href="#price">прайс</a>
+					</li>
+					<li class="nav__item">
+						<a class="nav__link nav__link--decor" href="#contacts">запись</a>
+					</li>
+					<li class="nav__item">
+						<a class="nav__link nav__link--decor nav__link--white" href="#slider">работы</a>
+					</li>
+					<li class="nav__item">
+						<a class="nav__link nav__link--decor nav__link--white" href="#footer">контакты</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="mobile-overlay"></div>
 		</div>
 	</header>
 
@@ -48,18 +92,216 @@
 	<main class="main">
 		<section class="gender">
 			<div class="gender__wrapper">
-				<div class="gender__img">
-					<img src="./img/gender/gender-manicure.jpg" alt="gender-manicure">
+				<div class="gender__box">
+					<picture>
+						<source srcset="/img/gender/gender-manicure-table.jpg" media="(max-width: 1139px)">
+						<img class="gender__img" src="./img/gender/gender-manicure.jpg" alt="gender-manicure">
+					</picture>
+					<a class="gender__title gender__title--left" href="#price">
+						<h2 class="subtitle">Маникюр</h2>
+					</a>
 				</div>
-				<div class="gender__img">
-					<img src="./img/gender/gender-pedicure.jpg" alt="gender-pedicure">
+				<div class="gender__box">
+					<picture>
+						<source srcset="/img/gender/gender-pedicure-table.jpg" media="(max-width: 1139px)">
+						<img class="gender__img" src="./img/gender/gender-pedicure.jpg" alt="gender-pedicure">
+					</picture>
+					<a class="gender__title gender__title--right" href="#price">
+						<h2 class="subtitle">Педикюр</h2>
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<div class="price" id="price">
+			<div class="price__wrapper">
+				<div class="price__box">
+					<ul class="price__list">
+						<li class="price__item">
+							<p class="price__text price__text--general ">маникюр</p>
+							<span class="price__price">1100</span>
+						</li>
+						<li class="price__item">
+							<p class="price__text">маникюр + гель-лак</p>
+							<span class="price__price">2200</span>
+						</li>
+						<li class="price__item">
+							<p class="price__text">маникюр + снятие </p>
+							<span class="price__price">1500</span>
+						</li>
+						<li class="price__item">
+							<p class="price__text">наращивание</p>
+							<span class="price__price">3200</span>
+						</li>
+						<li class="price__item">
+							<p class="price__text">коррекция</p>
+							<span class="price__price">2700</span>
+						</li>
+						<li class="price__item">
+							<p class="price__text">парафинотерапия </p>
+							<span class="price__price">500</span>
+						</li>
+					</ul>
+					<ul class="price__list">
+						<li class="price__item">
+							<p class="price__text price__text--general ">педикюр</p>
+							<span class="price__price">2000</span>
+						</li>
+						<li class="price__item">
+							<p class="price__text">педикюр + гель-лак</p>
+							<span class="price__price">2900</span>
+						</li>
+						<li class="price__item">
+							<p class="price__text">экспресс педикюр + гель-лак </p>
+							<span class="price__price">2200</span>
+						</li>
+						<li class="price__item">
+							<p class="price__text">экспресс педикюр </p>
+							<span class="price__price">1500</span>
+						</li>
+						<li class="price__item">
+							<p class="price__text">подопедикюр</p>
+							<span class="price__price">3000</span>
+						</li>
+					</ul>
+				</div>
+				<div class="price__box">
+					<ul class="price__list">
+						<li class="price__item">
+							<p class="price__text">дизайн от +&nbsp;</p>
+							<span class="price__price">100</span>
+						</li>
+						<li class="price__item">
+							<p class="price__text">фрeнч +&nbsp;</p>
+							<span class="price__price">500</span>
+						</li>
+						<li class="price__item">
+							<p class="price__text">ремонт +&nbsp;</p>
+							<span class="price__price">200</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="slider" id="slider">
+			<div class="owl-carousel owl-theme loop" id="carousel">
+				<img src="./img/slider/img-01.jpg" alt="photo-slider-01">
+				<img src="./img/slider/img-02.jpg" alt="photo-slider-02">
+				<img src="./img/slider/img-03.jpg" alt="photo-slider-03">
+				<img src="./img/slider/img-04.jpg" alt="photo-slider-04">
+				<img src="./img/slider/img-05.jpg" alt="photo-slider-05">
+				<img src="./img/slider/img-06.jpg" alt="photo-slider-06">
+				<img src="./img/slider/img-07.jpg" alt="photo-slider-07">
+				<img src="./img/slider/img-08.jpg" alt="photo-slider-08">
+				<img src="./img/slider/img-09.jpg" alt="photo-slider-09">
+				<img src="./img/slider/img-10.jpg" alt="photo-slider-10">
+			</div>
+		</div>
+
+		<section class="contacts" id="contacts">
+			<div class="contacts__img">
+				<img src="./img/contacts/contacts-img.jpg" alt="contacts-img">
+			</div>
+			<div class="contacts__info">
+				<div class="contacts__info-contact">
+					<p class="contacts__text-tel">Телефон</p>
+					<a class="contacts__tel" href="tel:+79110995379">+7 - 911 - 099 - 53 - 79</a>
+					<h3 class="contacts__name">Марина Торопова</h3>
+				</div>
+				<div class="contacts__social">
+					<div class="contacts__social-wrapper">
+						<p class="contacts__social-title">связаться</p>
+						<div class="social">
+							<a class="social__link" href="https://api.whatsapp.com/send?phone=79110995379"
+								target="_blank">
+								<svg class="icon-whatsapp">
+									<use href="./img/icon/sprite.svg#icon-whatsapp"> </use>
+								</svg>
+							</a>
+						</div>
+					</div>
+					<div class="contacts__social-wrapper">
+						<p class="contacts__social-title">подписаться</p>
+						<div class="social">
+							<a class="social__link" href="https://www.instagram.com/mari_toropova" target="_blank">
+								<svg class="icon-insagram">
+									<use href="./img/icon/sprite.svg#icon-insagram"> </use>
+								</svg>
+							</a>
+							<a class="social__link" href="https://vk.com/mari_toropova" target="_blank">
+								<svg class="icon-vk">
+									<use href="./img/icon/sprite.svg#icon-vk"> </use>
+								</svg>
+							</a>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
 	</main>
 
+	<footer class="footer" id="footer">
+		<div class="container">
+			<div class="footer__wrapper">
+				<div class="footer__box">
+					<a class="logo" href="#!">
+						<img src="./img/logo/mari-toropova-white.svg" alt="logo">
+					</a>
+					<div class="social">
+						<a class="social__link" href="https://api.whatsapp.com/send?phone=79110995379" target="_blank">
+							<svg class="icon-whatsapp">
+								<use href="./img/icon/sprite.svg#icon-whatsapp"> </use>
+							</svg>
+						</a>
+						<a class="social__link" href="https://vk.com/mari_toropova" target="_blank">
+							<svg class="icon-vk">
+								<use href="./img/icon/sprite.svg#icon-vk"> </use>
+							</svg>
+						</a>
+						<a class="social__link" href="https://www.instagram.com/mari_toropova" target="_blank">
+							<svg class="icon-insagram">
+								<use href="./img/icon/sprite.svg#icon-insagram"> </use>
+							</svg>
+						</a>
+						<a class="social__link" href="https://t.me/+79110995379" target="_blank">
+							<svg class="icon-telegram">
+								<use href="./img/icon/sprite.svg#icon-telegram"> </use>
+							</svg>
+						</a>
+					</div>
+					<a class="footer__text" href="http://cp04421.tmweb.ru/portfolio/index.html">project <br>Egor
+						Toropov</a>
+				</div>
+				<div class="footer__box">
+					<div class="footer__contact">
+						<h4 class="footer__title">Контакты</h4>
+						<a class="footer__contact-tel" href="tel:+79110995379">+7 - 911 - 099 - 53 - 79</a>
+						<p class="footer__contact-name">Марина</p>
+					</div>
+					<div class="footer__adress">
+						<h4 class="footer__title">Адрес </h4>
+						<p>Санкт-Петербург, ул. Южное шоссе, 53к5</p>
+					</div>
+				</div>
+				<div class="footer__box">
+					<div class="footer__map">
+						<iframe src="https://yandex.ru/map-widget/v1/-/CCUrVLQDwD" 
+							allowfullscreen="true" >
+						</iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
 
-	<footer class="footer"></footer>
+	<a href="#top" class="backtotop-btn" id="backtop">&#10154;</a>
+
+
+
+	<script src="./libs/jquery/jquery-3.6.3.min.js"></script>
+	<script src="./libs/owlCarousel2/owl.carousel.min.js"></script>
+	<script src="./js/main.js"></script>
 </body>
 
 </html>
