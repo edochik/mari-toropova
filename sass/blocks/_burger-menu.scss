@@ -1,0 +1,46 @@
+.burger-menu {
+    display: none;
+    @media (max-width: 899px) {
+        cursor: pointer;
+        display: block;
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: transform 0.3s ease-in;
+        
+        z-index: 999;
+        &::after,
+        &::before {
+            transition: transform 0.3s ease-in, right 0.3s ease-in, left 0.3s ease-in;
+            position: absolute;
+            content: "";
+            background-image: url("../img/icon/burger-left.svg");
+            background-repeat: no-repeat;
+            top: 0;
+            width: 11px;
+            height: 37px;
+        }
+        &::before {
+            right: 10px;
+        }
+        &::after {
+            left: 10px;
+        }
+        &.burger-menu--active {
+            &::before {
+                transform: rotate(50deg);
+                right: 20px;
+            }
+            &::after {
+                transform: rotate(-50deg);
+                left: 20px;
+            }
+        }
+    }
+}
+
+.burger-menu__stick {
+}

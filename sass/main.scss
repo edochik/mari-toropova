@@ -2,12 +2,21 @@
 
 @import "./base/reset";
 @import "./base/base";
+@import "./base/vars";
 
 //Blocks
 @import "./blocks/nav";
 @import "./blocks/logo";
 @import "./blocks/title";
+@import "./blocks/social";
+@import "./blocks/backtop";
+@import "./blocks/mobile-nav";
+@import "./blocks/burger-menu";
 
 //Section
 @import "./section/header";
 @import "./section/gender";
+@import "./section/price";
+@import "./section/slider";
+@import "./section/contacts";
+@import "./section/footer";

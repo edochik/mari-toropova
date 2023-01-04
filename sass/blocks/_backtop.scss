@@ -1,0 +1,16 @@
+.backtotop-btn {
+    transition: opacity 0.4s ease-in;
+    position: fixed;
+    bottom: 25px;
+    right: 50px;
+    z-index: 99;
+    font-size: 50px;
+    color: green !important;
+    transform: rotate(-90deg);
+    display: inline-block;
+    @media (max-width: 1139px) {
+        right: 10px;
+    }
+    @media (max-width: 899px) {
+    }
+}
